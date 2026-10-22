@@ -1,0 +1,7 @@
+<h1>Padre deportes</h1>
+
+@for(deporte of deportes; track $index){
+    <li>
+        <app-hijo-deporte-component [sport]="deporte"></app-hijo-deporte-component>
+    </li>
+}
