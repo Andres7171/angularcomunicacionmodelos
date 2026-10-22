@@ -1,0 +1,10 @@
+<h1>Lista productos</h1>
+<p>{{ producto.nombre }}</p>
+<p>{{ producto.precio }}</p>
+<img style="width: 150px; height: 150px" src="{{ producto.imagen }}" alt="" />
+
+@for(prod of listProductos;track $index){
+    <p>{{prod.nombre}}</p>
+    <p>{{prod.precio}}</p>
+    <img style="width: 150px; height: 150px" src="{{ prod.imagen }}" alt="" />
+}
